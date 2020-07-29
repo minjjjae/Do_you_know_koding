@@ -1,0 +1,287 @@
+<section id="bookpage" class="ftco-section bookpage  nanum-font" style="position: relative;">
+    <!-- 이동버튼 -->
+    {% include "books/moveBtn.html" %}
+    <!-- 북마크 -->
+    {% include "books/bookmark.html" %}
+
+    <!-- 1페이지를 표지로 만들 때 -->
+    <div id="flipbook" class="flipbook">
+        <div class="hard start-cover">
+            <!-- cover -->
+            <div class="book-wrap">
+                <div class="cover-content">
+                    {% include "books/pages/startcover.html" %}
+                </div>
+            </div>
+        </div>
+        <div class="hard">
+            <!-- 소개 페이지-->
+            <div class="book-wrap">
+                <div class="page-content" style="padding-top: 50px; margin-left: 50px">
+                    <!-- p2
+                    contents -->
+                    {% include "books/pages/contents.html" %}
+                </div>
+            </div>
+        </div>
+        <!-- all -->
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p3
+                    all_1 -->
+                    {% include "books/pages/all_1.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p4
+                    all_2 -->
+                    {% include "books/pages/all_2.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p5
+                    all_3 -->
+                    {% include "books/pages/all_3.html" %}
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Python -->
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p6
+                    python1 -->
+                    {% include "books/pages/python_1.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p7
+                    python2 -->
+                    {% include "books/pages/python_2.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p8
+                    python3 -->
+                    {% include "books/pages/python_3.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p9
+                    python4 -->
+                    {% include "books/pages/python_4.html" %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Java -->
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p10
+                    java1 -->
+                    {% include "books/pages/java_1.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p11
+                    java2 -->
+                    {% include "books/pages/java_2.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p12
+                    java3 -->
+                    {% include "books/pages/java_3.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p13
+                    java4 -->
+                    {% include "books/pages/java_4.html" %}
+                </div>
+            </div>
+        </div>
+
+        <!-- C -->
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- 
+                    p14
+                    c1 
+                    -->
+                    {% include "books/pages/c_1.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p15
+                    c2 -->
+                    {% include "books/pages/c_2.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p16
+                    c3 -->
+                    {% include "books/pages/c_3.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p17
+                    c4 -->
+                    {% include "books/pages/c_4.html" %}
+                </div>
+            </div>
+        </div>
+
+        <!-- etc -->
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p18
+                    etc1 -->
+                    {% include "books/pages/etc_1.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p19
+                    etc2 -->
+                    {% include "books/pages/etc_2.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p20
+                    etc3 -->
+                    {% include "books/pages/etc_3.html" %}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="book-wrap">
+                <div class="page-content">
+                    <!-- p21
+                    etc4 -->
+                    {% include "books/pages/etc_4.html" %}
+                </div>
+            </div>
+        </div>
+        <div class="hard end-cover">
+            <!-- cover -->
+            <div class="">
+                {% include "books/pages/endcover.html" %}
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<style>
+    .strong-color {
+        color: #448ef6;
+    }
+
+    .cover-content {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .book-wrap {
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .flipbook {
+        z-index: 1;
+    }
+
+    /*짝수*/
+    .even {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(" ../static/images/books/right-border.png");
+        background-position: right top;
+        background-repeat: repeat-y;
+        -webkit-box-shadow: inset 5px 5px 15px 1px rgba(0, 0, 0, 0.3) !important;
+        -moz-box-shadow: inset 5px 5px 15px 1px rgba(0, 0, 0, 0.3) !important;
+        box-shadow: inset 5px 5px 15px 1px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    /*홀수*/
+    .odd {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../static/images/books/left-border.png");
+        background-position: left top;
+        background-repeat: repeat-y;
+        -webkit-box-shadow: inset -5px 5px 15px 1px rgba(0, 0, 0, 0.3) !important;
+        -moz-box-shadow: inset -5px 5px 15px 1px rgba(0, 0, 0, 0.3) !important;
+        box-shadow: inset -5px 5px 15px 1px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .bookpage {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .flipbook {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page {
+        background-color: rgba(255, 255,
+                255, 255);
+    }
+</style>
